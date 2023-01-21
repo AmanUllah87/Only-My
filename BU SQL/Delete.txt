@@ -1,0 +1,97 @@
+1. Delete ID
+2. Delete UserName
+3. Delete All Bill
+4. Delete Pharmacy All Bill
+5. Delete All Indoor Bill
+6. Delete return Anount
+7. Bill/Voucher/DueAmount Delete
+
+------------------------------------------------------
+
+1.------------Delete ID------------------------
+Delete from tb_BILL_MASTER where BillNo ='NH21000078'
+Delete from tb_BILL_DETAIL where BillNo ='NH21000078'
+Delete from tb_BILL_LEDGER where TrNo ='NH21000078'
+-------------------------------------------------
+
+
+2.----------Delete UserName--------------------------------
+Delete from tb_USER_PRIVILEGE where UserName !='aman' AND UserName != 'manik' AND UserName != 'Humayun'
+Delete from tb_USER_PRIVILEGE_DTLS where UserName !='aman' AND UserName != 'manik' AND UserName != 'Humayun'
+---------------------------------------------------------
+
+
+3.------------------Delete All Bill-------------------
+EXEC SP_DEL_ALL_DATA
+
+Truncate table tb_BILL_DETAIL
+Truncate table tb_BILL_LEDGER
+Truncate table tb_BILL_MASTER
+Truncate table tb_PATIENT
+Truncate table tb_DUE_COLL
+Truncate table tb_LAB_STRICKER_INFO
+Truncate table tb_DOCTOR
+Truncate table tb_DOCTOR_LEDGER
+Truncate table DEL_RECORD_OF_BILL_DELETE
+Truncate table tb_FINANCIAL_COLLECTION
+Truncate table Update_Record_Of_Patient
+
+
+Truncate table tb_in_BED
+Truncate table tb_in_BILL_DETAIL
+Truncate table tb_IN_BILL_MASTER
+Truncate table tb_in_PATIENT_LEDGER
+
+
+-----------------------------------------------------
+
+
+
+
+4.--------------------Delete Pharmacy All Bill-----------------------------
+[dbo].[tb_ph_DUE_COLL]
+[dbo].[tb_ph_PURCHASE_DETAIL]
+[dbo].[tb_ph_PURCHASE_DUE_PAYMENT]
+[dbo].[tb_ph_PURCHASE_LEDGER]
+[dbo].[tb_ph_PURCHASE_MASTER]
+[dbo].[tb_ph_PURCHASE_RETURN_DETAIL]
+[dbo].[tb_ph_PURCHASE_RETURN_MASTER]
+[dbo].[tb_ph_SALES_DETAIL]
+[dbo].[tb_ph_SALES_LEDGER]
+[dbo].[tb_ph_SALES_MASTER]
+[dbo].[tb_ph_SALES_RETURN_DETAIL]
+[dbo].[tb_ph_SALES_RETURN_MASTER]
+[dbo].[tb_ph_STOCK_LEDGER]
+
+-----------------------------------------------------------------------------
+
+5.--------------------------Delete All Indoor Bill---------------------------
+truncate table tb_in_ADMISSION
+truncate table tb_in_ADVANCE_COLLECTION
+truncate table tb_in_PATIENT_LEDGER
+truncate table tb_in_BILL_DETAIL
+truncate table tb_IN_BILL_MASTER
+update tb_in_BED set BookStatus = '0'
+
+-------------------------------------------------------------------------------------
+
+6.--------------------------Delete return Anount---------------------------------------
+delete  from tb_BILL_LEDGER where TrNo = '22120002'
+delete from tb_BILL_RETURN where TrNo = '22120002'
+-------------------------------------------------------------------------------------
+
+7.-------------------Bill/Voucher/DueAmount Delete -------------------------------
+
+delete from DEL_RECORD_OF_BILL_DELETE where BillNo = '00002697'
+
+------------------------------------------------------------------------------------
+
+8.------------------Indoor Bill Delete --------------------------------------
+delete from tb_in_TEST_ADD_LIST where tRnO='000744' and tESTiD=13473
+delete from tb_in_PATIENT_LEDGER where tRnO='000744' and tESTiD=13473
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+BACKUP DATABASE SuperPathDb TO DISK = 'F:\B\NH.09.06.22.bak';

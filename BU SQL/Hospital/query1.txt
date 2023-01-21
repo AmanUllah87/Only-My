@@ -1,0 +1,158 @@
+ALTER TABLE tb_BILL_MASTER ADD AdmId INT DEFAULT 0 NOT NULL
+ALTER TABLE tb_DUE_COLL ADD AdmId INT DEFAULT 0 NOT NULL
+ALTER TABLE tb_TESTCHART ADD ChangeCharge INT  NOT NUll DEFAULT 0
+
+
+DROP TABLE [tb_in_PATIENT_LEDGER]
+
+CREATE TABLE [dbo].[tb_in_PATIENT_LEDGER](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[TrNo] [nvarchar](50) NOT NULL,
+	[TrDate] [date] NOT NULL,
+	[RegId] [int] NOT NULL,
+	[AdmId] [int] NOT NULL,
+	[BedId] [int] NOT NULL,
+	[TestId] [int] NOT NULL,
+	[TestName] [nvarchar](2500) NOT NULL,
+	[Charge] [float] NOT NULL   DEFAULT ((0)),
+	[Unit] [int] NOT NULL,
+	[TotCharge] [float] NOT NULL  DEFAULT ((0)),
+	[LessAmt] [float] NOT NULL  DEFAULT ((0)),
+	[CollAmt] [float] NOT NULL  DEFAULT ((0)),
+	[RtnAmt] [float] NOT NULL   DEFAULT ((0)),
+	[ExtraLessAmt] [float] NOT NULL   DEFAULT ((0)),
+	[DrId] [int] NOT NULL   DEFAULT ((0)),
+	[DrAmt] [float] NOT NULL  DEFAULT ((0))
+) ON [PRIMARY]
+
+CREATE TABLE [dbo].[tb_in_FIXED_ID](
+	[Id] [int] NOT NULL,
+	[Name] [nvarchar](500) NOT NULL
+) ON [PRIMARY]
+INSERT [dbo].[tb_in_FIXED_ID] ([Id], [Name]) VALUES (14281, N'Advance Collection')
+INSERT [dbo].[tb_in_FIXED_ID] ([Id], [Name]) VALUES (1624, N'Admission Fee')
+INSERT [dbo].[tb_in_FIXED_ID] ([Id], [Name]) VALUES (14282, N'Diagnosis Bill')
+INSERT [dbo].[tb_in_FIXED_ID] ([Id], [Name]) VALUES (14283, N'Release Time Collection')
+---INSERT TEST NAME BY THIS NAME AND ID TO TABLE tb_in_FIXED_ID
+
+
+
+DROP TABLE tb_in_DEPARTMENT
+CREATE TABLE [dbo].[tb_in_DEPARTMENT](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](500) NOT NULL
+) ON [PRIMARY]
+
+INSERT INTO tb_in_DEPARTMENT(Name)VALUES('Cardiology')
+INSERT INTO tb_in_DEPARTMENT(Name)VALUES('Gynaecology')
+
+INSERT INTO tb_in_DEPARTMENT(Name)VALUES('Ophthalmology')
+INSERT INTO tb_in_DEPARTMENT(Name)VALUES('Surgery')
+INSERT INTO tb_in_DEPARTMENT(Name)VALUES('Medicine')
+
+
+
+
+
+
+
+DROP TABLE tb_IN_BILL_MASTER
+CREATE TABLE [dbo].[tb_IN_BILL_MASTER](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[BillNo] [nvarchar](50) NOT NULL,
+	[BillDate] [date] NOT NULL,
+	[BillTime] [nvarchar](50) NOT NULL,
+	[AdmId] [int] NOT NULL,
+	[RegId] [int] NOT NULL,
+	[BedId] [int] NOT NULL,
+	[TotalAmt] [float] NOT NULL DEFAULT ((0)),
+	[TotalDiscount] [float] NOT NULL   DEFAULT ((0)),
+	[AdvanceAmt] [float] NOT NULL   DEFAULT ((0)),
+	[PaidAmt] [float] NOT NULL   DEFAULT ((0)),
+	[Remarks] [nvarchar](1550) NULL,
+	[PostedBy] [nvarchar](50) NOT NULL,
+	[PcName] [nvarchar](50) NOT NULL,
+	[IpAddress] [nvarchar](50) NOT NULL,
+	[Entrydate] [datetime] NOT NULL  DEFAULT (getdate())
+) ON [PRIMARY]
+
+DROP TABLE tb_in_BILL_DETAIL
+CREATE TABLE [dbo].[tb_in_BILL_DETAIL](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[MasterId] [int] NOT NULL,
+	[BillNo] [nvarchar](50) NOT NULL,
+	[TestId] [int] NOT NULL,
+	[TestName] [nvarchar](1500) NOT NULL  DEFAULT (''),
+	[Charge] [float] NOT NULL  DEFAULT ((0)),
+	[Unit] [float] NOT NULL  DEFAULT ((0)),
+	[TotCharge] [float] NOT NULL  DEFAULT ((0)),
+	[LessAmt] [float] NOT NULL   DEFAULT ((0)),
+	[ExtraLess] [float] NOT NULL   DEFAULT ((0)),
+	[DrAmt] [float] NOT NULL  DEFAULT ((0)),
+	[DrId] [int] NOT NULL   DEFAULT ((0))
+) ON [PRIMARY]
+
+DROP TABLE tb_in_BED_TYPE
+CREATE TABLE [dbo].[tb_in_BED_TYPE](
+	[Name] [nvarchar](50) NOT NULL
+) ON [PRIMARY]
+
+DROP TABLE tb_in_BED
+CREATE TABLE [dbo].[tb_in_BED](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](500) NOT NULL,
+	[Floor] [nvarchar](500) NULL,
+	[BedType] [nvarchar](500) NULL,
+	[Charge] [float] NOT NULL   DEFAULT ((0)),
+	[SrvCharge] [float] NOT NULL  DEFAULT ((0)),
+	[BookStatus] [int] NOT NULL  DEFAULT ((0)),
+	[DeptId] [int] NOT NULL,
+	[PostedBy] [nvarchar](50) NOT NULL,
+	[EntryDate] [datetime] NOT NULL   DEFAULT (getdate())
+) ON [PRIMARY]
+
+DROP TABLE tb_in_ADVANCE_COLLECTION
+CREATE TABLE [dbo].[tb_in_ADVANCE_COLLECTION](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[TrNo] [nvarchar](50) NOT NULL,
+	[TrDate] [date] NOT NULL,
+	[RegId] [int] NOT NULL,
+	[AdmId] [int] NOT NULL,
+	[BedId] [int] NOT NULL,
+	[Amount] [float] NOT NULL   DEFAULT ((0)),
+	[PostedBy] [nvarchar](500) NOT NULL,
+	[EntryDate] [datetime] NOT NULL   DEFAULT (getdate()),
+	[PcName] [nvarchar](50) NOT NULL,
+	[IpAddress] [nvarchar](50) NOT NULL
+) ON [PRIMARY]
+
+DROP TABLE tb_in_ADMISSION
+CREATE TABLE [dbo].[tb_in_ADMISSION](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[DeptId] [int] NOT NULL,
+	[RegId] [int] NOT NULL,
+	[AdmNo] [nvarchar](50) NOT NULL,
+	[AdmDate] [date] NOT NULL,
+	[AdmTime] [nvarchar](50) NOT NULL,
+	[PtName] [nvarchar](2500) NOT NULL,
+	[ContactNo] [nvarchar](50) NOT NULL,
+	[PtSex] [nvarchar](50) NOT NULL,
+	[PtAge] [nvarchar](500) NOT NULL,
+	[PtAddress] [nvarchar](2550) NOT NULL,
+	[SpouseName] [nvarchar](2550) NOT NULL,
+	[EmgrContact] [nvarchar](50) NOT NULL,
+	[ChiefComplain] [nvarchar](2550) NOT NULL,
+	[RefId] [int] NOT NULL  DEFAULT ((0)),
+	[UnderDrId] [int] NOT NULL  DEFAULT ((0)),
+	[BedId] [int] NOT NULL,
+	[AdmCharge] [float] NOT NULL   DEFAULT ((0)),
+	[ReleaseStatus] [int] NOT NULL   DEFAULT ((0)),
+	[PostedBy] [nvarchar](50) NOT NULL,
+	[EntryDate] [datetime] NOT NULL   DEFAULT (getdate()),
+	[PcName] [nvarchar](50) NOT NULL,
+	[IpAddress] [nvarchar](50) NOT NULL,
+	[TrNo] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+
+

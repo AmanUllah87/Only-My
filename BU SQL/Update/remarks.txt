@@ -1,0 +1,10 @@
+ALTER VIEW [dbo].[V_Due_Invoice_List]
+AS
+SELECT a.MasterId,b.BillNo,b.BillDate,b.PatientName,b.Age,b.Sex,b.MobileNo,c.Name As ConsDrName,c.Id AS ConsDrId,
+Isnull(SUM(a.SalesAmt-a.LessAmt-a.RtnAmt-a.CollAmt),0) AS Balance,b.TotalAmt AS BillAmt,b.RefDrId,d.Name AS RefDrName,b.Remarks
+FROM tb_BILL_LEDGER a INNER JOIN tb_BILL_MASTER b ON a.MasterId=b.Id
+INNER JOIN tb_Doctor c ON b.UnderDrId=c.Id
+INNER JOIN tb_Doctor d ON b.RefDrId=d.Id
+
+GROUP BY a.MasterId,b.PatientName,b.Age,b.Sex,b.MobileNo,b.BillDate,b.BillNo,c.Name,c.Id,b.TotalAmt,b.RefDrId,d.Name,b.Remarks
+HAVING SUM(a.SalesAmt-a.LessAmt-a.RtnAmt-a.CollAmt)>0

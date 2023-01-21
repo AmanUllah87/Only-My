@@ -1,0 +1,28 @@
+ truncate table tb_DrWiseHonorium
+---------------------------------------------------------------------------
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/3.333),0) where SubProjectId ='1'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='1'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='2'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='3'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='4'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='5'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='6'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='7'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='8'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='9'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='10'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='11'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='12'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='13'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='14'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='15'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='16'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='17'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='18'
+Update tb_TESTCHART set MAXDISCOUNT = round ((Charge/2),0) where SubProjectId ='19'
+
+ ---------------------------------------------------------------------------
+
+update tb_BILL_DETAIL set HnrAmt = 10 where TestId = '25913'
+
+----------------------------------------------------------------------------

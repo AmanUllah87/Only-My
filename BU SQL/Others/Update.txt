@@ -1,0 +1,22 @@
+Update tb_BILL_DETAIL SET BillNo=SUbstring(BillNo,3,15)
+Update tb_BILL_MASTER SET BillNo=SUbstring(BillNo,3,15)
+Update tb_BILL_LEDGER SET TrNo=SUbstring(TrNo,3,15)
+Update tb_DUE_COLL SET TrNo=SUbstring(TrNo,3,15)
+Update tb_LAB_STRICKER_INFO SET InvNo=SUbstring(InvNo,3,15),SampleNo=SUbstring(SampleNo,3,15)
+
+
+
+ALTER PROC [dbo].[SP_GET_INVOICENO] (@StockType Int)   AS
+IF @StockType=1
+BEGIN
+SELECT RIGHT('00' + Convert(varchar,YEAR(GETDATE())), 2) + 
+RIGHT('00' + Convert(varchar,MONTH(Getdate())), 2) + 
+RIGHT('0000'+ Convert(varchar,ISNULL(Max(Convert(integer, RIGHT(BillNo, 4))),0)+ 1), 4) AS InvNo
+FROM tb_BILL_MASTER  WHERE YEAR(BillDate)=YEAR(GetDate()) AND MONTH(BillDate)=MONTH(GetDate()) AND BillDate>='2022-02-13' END IF @StockType=2 BEGIN 
+SELECT  RIGHT('00' + Convert(varchar,YEAR(GETDATE())), 2) + RIGHT('00' + Convert(varchar,MONTH(Getdate())), 2) +  RIGHT('0000'+ Convert(varchar,ISNULL(Max(Convert(integer, RIGHT(TrNo, 4))),0)+ 1), 4) AS InvNo 
+FROM tb_DUE_COLL  WHERE YEAR(TrDate)=YEAR(GetDate()) AND MONTH(TrDate)=MONTH(GetDate()) AND TrDate>='2022-02-13' END
+
+
+
+
+

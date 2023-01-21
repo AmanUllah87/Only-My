@@ -1,0 +1,33 @@
+
+--------------Only Year-------------------------------------------------
+ALTER PROC [dbo].[SP_GET_INVOICENO] (@StockType Int)   AS
+IF @StockType=1
+BEGIN
+SELECT 'NH'+RIGHT('00' + Convert(varchar,YEAR(GETDATE())), 2) + 
+RIGHT('000000'+ Convert(varchar,ISNULL(Max(Convert(integer, RIGHT(BillNo, 6))),0)+ 1), 6) AS InvNo
+FROM tb_BILL_MASTER  WHERE YEAR(GETDATE())=YEAR(GetDate()) 
+END
+IF @StockType=2
+BEGIN
+SELECT  'DC'+RIGHT('00' + Convert(varchar,YEAR(GETDATE())), 2) + 
+RIGHT('000000'+ Convert(varchar,ISNULL(Max(Convert(integer, RIGHT(TrNo, 6))),0)+ 1), 6) AS InvNo
+FROM tb_DUE_COLL  WHERE YEAR(GETDATE())=YEAR(GetDate()) 
+END
+-----------------------------------------------------------------------------------------
+------------------------Year + Month------------------------------------------------------
+ALTER PROC [dbo].[SP_GET_INVOICENO] (@StockType Int)   AS
+IF @StockType=1
+BEGIN
+SELECT ''+RIGHT('00' + Convert(varchar,YEAR(GETDATE())), 2) + 
+RIGHT('00' + Convert(varchar,MONTH(Getdate())), 2) + 
+RIGHT('0000'+ Convert(varchar,ISNULL(Max(Convert(integer, RIGHT(BillNo, 4))),0)+ 1), 4) AS InvNo
+FROM tb_BILL_MASTER  WHERE YEAR(GETDATE())=YEAR(GetDate()) AND MONTH(GETDATE())=MONTH(GetDate())
+END
+IF @StockType=2
+BEGIN
+SELECT  'DC'+RIGHT('00' + Convert(varchar,YEAR(GETDATE())), 2) + 
+RIGHT('00' + Convert(varchar,MONTH(Getdate())), 2) + 
+RIGHT('0000'+ Convert(varchar,ISNULL(Max(Convert(integer, RIGHT(TrNo, 4))),0)+ 1), 4) AS InvNo
+FROM tb_DUE_COLL  WHERE YEAR(GETDATE())=YEAR(GetDate()) AND MONTH(GETDATE())=MONTH(GetDate()) 
+END
+------------------------------------------------------------------------------------------

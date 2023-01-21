@@ -1,0 +1,1 @@
+EXEC Sp_Get_InvoicePrint 1,'' for get invoice print

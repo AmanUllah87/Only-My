@@ -1,0 +1,32 @@
+----------------------Delete Authenticaton Problem------------------------------------
+ALTER TABLE DEL_RECORD_OF_BILL_DELETE ADD EntryDate Datetime NOT NULL DEFAULT GetDate()
+
+----------------------Find Problem without vac----------------------------------------------------
+update tb_TESTCHART set IsVaqItem=0
+
+------------------------Remove Maximum Discound--------------------------------------------------------------
+Update tb_TESTCHART SET MAXDISCOUNT=Charge
+
+-----------------------Some Test count not show-------------------------------------------------------
+select * from tb_TESTCHART where SubProjectId = '0'
+
+
+----------------------Entry Double Test -------------------------------------------------------
+SELECT * FROM tb_TESTCHART_PARAM WHERE MachineParam=''
+
+
+----------------------Parameter SL-----------------------------------------------------------
+select* from tb_TESTCHART_PARAM where GroupSl = '1' and ParamSl = '1'
+
+
+----------------------Double Machine Pram ---------------------------------------------
+    SELECT
+    MachineParam, COUNT(*) AS CountOf
+    FROM tb_TESTCHART_PARAM
+    GROUP BY MachineParam
+    HAVING COUNT(*)>1
+
+
+select *from tb_TESTCHART_PARAM where MachineParam = 'GLUC'
+
+---------------------------------------------------------------------------------------

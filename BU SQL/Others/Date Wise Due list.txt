@@ -1,0 +1,3 @@
+ string query = "SELECT * FROM V_Due_Invoice_List WHERE 1=1 " + cond + "";
+            var dt = new LabReqViewer("DueListConsDr", query, "Date upto " + DateTime.Now.ToString("yyyy-MM-dd"), "V_Due_Invoice_List", "Due List " + drName);
+            dt.Show();

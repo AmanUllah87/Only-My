@@ -1,0 +1,1 @@
+Update tb_TESTCHART SET MAXDISCOUNT=Charge

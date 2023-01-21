@@ -1,0 +1,25 @@
+--------------------------Bill date Update------------------------------------
+Update  tb_BILL_MASTER set BillDate = '2022-07-22' where BillNo ='22070793'
+Update tb_BILL_LEDGER set TrDate = '2022-07-22 00:00:00' where TrNo ='22070793'
+
+
+---------------------------ID Update------------------------------------
+Update  tb_BILL_MASTER set BillNo = 'NH22071161' where BillNo ='IN22071161'
+Update tb_BILL_LEDGER set TrNo = 'NH22071161' where TrNo ='IN22071161'
+
+
+
+------------------------Password-------------------------------------------
+update [dbo].[tb_USER_PRIVILEGE] Set Password = '4567' Where UserName = 'aman'
+
+
+-----------------------------Add Vaq --------------------------------------------
+
+update tb_MASTER_INFO set TakeVaqPrice = 'True'
+
+----------------------------------------------------------------------------------
+
+----------Update Test ID, and replace another Test---------------------------------
+Update tb_BILL_DETAIL SET TestId='208' WHERE TestId='9966'
+Update tb_LAB_STRICKER_INFO SET TestId='208',ReportFileName='Clinical pathology' WHERE TestId='9966'
+

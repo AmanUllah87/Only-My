@@ -1,0 +1,4 @@
+---------------------Change Imaging--------------------------------------------------------
+select *from tb_TESTCHART where SubProjectId ='12' OR SubProjectId ='13';
+UPDATE tb_TESTCHART SET ReportFileName = 'Imaging' WHERE SubProjectId = 12 OR SubProjectId =13;
+------------------------------------------------------------------------------------------

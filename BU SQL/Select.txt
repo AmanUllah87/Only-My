@@ -1,0 +1,8 @@
+----------Show ID--------------------------
+select * from tb_BILL_MASTER where BillNo ='NH21000078'
+select * from tb_BILL_DETAIL where BillNo ='NH21000078'
+select * from tb_BILL_LEDGER where TrNo ='NH21000078'
+----------------------------------------------------
+-----------------Indoor Patient ledger--------------
+select * from tb_in_ADMISSION where AdmNo = '22120690'
+Select * from tb_in_PATIENT_LEDGER where AdmId = '1671'

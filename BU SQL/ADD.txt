@@ -1,0 +1,16 @@
+---------------------Due Collection Bill ID -------------------------------------------------
+
+  ALTER VIEW [dbo].[V_Due_Collection_List]
+AS
+SELECT a.TrNo,a.TrDate,a.MasterId,b.PatientName,b.MobileNo,a.TotalAmt,a.LessAmt,a.PostedBy,b.UnderDrId AS ConsDrId,c.Name AS ConsDrName,b.BillDate,b.BillNo
+FROM tb_DUE_COLL a INNER JOIN tb_BILL_MASTER b ON a.MasterId=b.id
+INNER JOIN tb_Doctor c ON b.UnderDrId=c.Id
+
+---------------------Update Patient Data---------------------------------------------------------
+CREATE TABLE [dbo].[Update_Record_Of_Patient](
+	[BillNo] [nvarchar](1000) NULL,
+	[Name] [nvarchar](1000) NULL,
+	[DrName] [nvarchar](1000) NULL,
+	[Sex] [nvarchar](1000) NULL,
+	[PostedBy] [nvarchar](1000) NULL
+) ON [PRIMARY]
