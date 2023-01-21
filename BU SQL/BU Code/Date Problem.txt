@@ -1,2 +1,0 @@
-    cmd.Parameters.AddWithValue("@BillTime", DateTime.Now.ToString("hh:mm:ss tt"));
-    cmd.Parameters.AddWithValue("@TrTime", DateTime.Now.ToString("hh:mm:ss tt"));
