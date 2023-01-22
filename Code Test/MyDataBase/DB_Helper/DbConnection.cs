@@ -20,6 +20,7 @@ namespace MyDataBase.DB_Helper
         static readonly string[] LinesLabSoft = File.ReadAllLines(@"" + PathAddressLabSoft + "");
         public SqlConnection ConLab = new SqlConnection(@"server=" + hlp.GetDecryptedDataForDb(LinesLabSoft[0]) + ";Database=" + hlp.GetDecryptedDataForDb(LinesLabSoft[1]) + ";User ID=" + hlp.GetDecryptedDataForDb(LinesLabSoft[2]) + ";Password=" + hlp.GetDecryptedDataForDb(LinesLabSoft[3]) + "");
         public string DeleteSuccessMessage = "Delete Success";
+        public string DatabaseName = hlp.GetDecryptedDataForDb(LinesLabSoft[1]);
 
 
 

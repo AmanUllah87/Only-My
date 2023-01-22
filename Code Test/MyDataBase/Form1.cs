@@ -27,7 +27,7 @@ namespace MyDataBase
 
             try
             {
-                _gt.DeleteInsertLab(richTextBox1.Text);
+                _gt.DeleteInsertLab(@"BACKUP DATABASE ["+ _gt.DatabaseName + "] TO DISK = 'E:\\B\\19.01.2022.bak' with init");
 
                 MessageBox.Show(@"Success");
             }
