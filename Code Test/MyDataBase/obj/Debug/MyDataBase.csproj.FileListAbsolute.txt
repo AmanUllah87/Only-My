@@ -1,0 +1,86 @@
+C:\Users\Aman\source\repos\MyDataBase\MyDataBase\obj\Debug\MyDataBase.Form1.resources
+C:\Users\Aman\source\repos\MyDataBase\MyDataBase\obj\Debug\MyDataBase.Properties.Resources.resources
+C:\Users\Aman\source\repos\MyDataBase\MyDataBase\obj\Debug\MyDataBase.csproj.GenerateResource.cache
+C:\Users\Aman\source\repos\MyDataBase\MyDataBase\bin\Debug\MyDataBase.exe.config
+C:\Users\Aman\source\repos\MyDataBase\MyDataBase\bin\Debug\MyDataBase.exe
+C:\Users\Aman\source\repos\MyDataBase\MyDataBase\bin\Debug\MyDataBase.pdb
+C:\Users\Aman\source\repos\MyDataBase\MyDataBase\obj\Debug\MyDataBase.exe
+C:\Users\Aman\source\repos\MyDataBase\MyDataBase\obj\Debug\MyDataBase.pdb
+C:\Users\Aman\source\repos\MyDataBase\MyDataBase\obj\Debug\MyDataBase.csprojResolveAssemblyReference.cache
+H:\Backup\Main\MAIN-18-04-22\Right\OneDrive\My Project\MyDataBase\MyDataBase\bin\Debug\MyDataBase.exe.config
+H:\Backup\Main\MAIN-18-04-22\Right\OneDrive\My Project\MyDataBase\MyDataBase\bin\Debug\MyDataBase.exe
+H:\Backup\Main\MAIN-18-04-22\Right\OneDrive\My Project\MyDataBase\MyDataBase\bin\Debug\MyDataBase.pdb
+H:\Backup\Main\MAIN-18-04-22\Right\OneDrive\My Project\MyDataBase\MyDataBase\obj\Debug\MyDataBase.csproj.AssemblyReference.cache
+H:\Backup\Main\MAIN-18-04-22\Right\OneDrive\My Project\MyDataBase\MyDataBase\obj\Debug\MyDataBase.csproj.SuggestedBindingRedirects.cache
+H:\Backup\Main\MAIN-18-04-22\Right\OneDrive\My Project\MyDataBase\MyDataBase\obj\Debug\MyDataBase.Form1.resources
+H:\Backup\Main\MAIN-18-04-22\Right\OneDrive\My Project\MyDataBase\MyDataBase\obj\Debug\MyDataBase.Properties.Resources.resources
+H:\Backup\Main\MAIN-18-04-22\Right\OneDrive\My Project\MyDataBase\MyDataBase\obj\Debug\MyDataBase.csproj.GenerateResource.cache
+H:\Backup\Main\MAIN-18-04-22\Right\OneDrive\My Project\MyDataBase\MyDataBase\obj\Debug\MyDataBase.csproj.CoreCompileInputs.cache
+H:\Backup\Main\MAIN-18-04-22\Right\OneDrive\My Project\MyDataBase\MyDataBase\obj\Debug\MyDataBase.exe
+H:\Backup\Main\MAIN-18-04-22\Right\OneDrive\My Project\MyDataBase\MyDataBase\obj\Debug\MyDataBase.pdb
+C:\Users\Aman\OneDrive\Desktop\Test\Digital\MyDataBase\obj\Debug\MyDataBase.csproj.AssemblyReference.cache
+C:\Users\Aman\OneDrive\Desktop\Test\Digital\MyDataBase\obj\Debug\MyDataBase.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aman\OneDrive\Desktop\Test\Digital\MyDataBase\obj\Debug\MyDataBase.Form1.resources
+C:\Users\Aman\OneDrive\Desktop\Test\Digital\MyDataBase\obj\Debug\MyDataBase.Properties.Resources.resources
+C:\Users\Aman\OneDrive\Desktop\Test\Digital\MyDataBase\obj\Debug\MyDataBase.csproj.GenerateResource.cache
+C:\Users\Aman\OneDrive\Desktop\Test\Digital\MyDataBase\obj\Debug\MyDataBase.csproj.CoreCompileInputs.cache
+C:\Users\Aman\OneDrive\Desktop\Test\Digital\MyDataBase\bin\Debug\DigitalVD.exe.config
+C:\Users\Aman\OneDrive\Desktop\Test\Digital\MyDataBase\bin\Debug\DigitalVD.exe
+C:\Users\Aman\OneDrive\Desktop\Test\Digital\MyDataBase\bin\Debug\DigitalVD.pdb
+C:\Users\Aman\OneDrive\Desktop\Test\Digital\MyDataBase\obj\Debug\DigitalVD.exe
+C:\Users\Aman\OneDrive\Desktop\Test\Digital\MyDataBase\obj\Debug\DigitalVD.pdb
+I:\Main\Right C\Project\Customer\Digital\MyDataBase\bin\Debug\DigitalVD.exe.config
+I:\Main\Right C\Project\Customer\Digital\MyDataBase\obj\Debug\DigitalVD.exe
+I:\Main\Right C\Project\Customer\Digital\MyDataBase\obj\Debug\DigitalVD.pdb
+I:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.Form1.resources
+I:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.Properties.Resources.resources
+I:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.csproj.GenerateResource.Cache
+I:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.Report1.DrPrint.resources
+I:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\SuperSoftEngr.exe.config
+I:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\SuperSoftEngr.exe
+I:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\SuperSoftEngr.pdb
+I:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\SuperSoftEngr.exe
+I:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\SuperSoftEngr.pdb
+I:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.csprojResolveAssemblyReference.cache
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\SuperSoftEngr.exe.config
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\SuperSoftEngr.exe
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\SuperSoftEngr.pdb
+J:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\SuperSoftEngr.exe.config
+J:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\SuperSoftEngr.exe
+J:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\SuperSoftEngr.pdb
+J:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\SuperSoftEngr.exe
+J:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\SuperSoftEngr.pdb
+J:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.csprojResolveAssemblyReference.cache
+J:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.Form1.resources
+J:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.Properties.Resources.resources
+J:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.Report1.DrPrint.resources
+J:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.csproj.GenerateResource.Cache
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\SuperSoftEngr.exe
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\SuperSoftEngr.pdb
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.Form1.resources
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.Properties.Resources.resources
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.Report1.DrPrint.resources
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.csproj.GenerateResource.Cache
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.ReportSource.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.Shared.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.Windows.Forms.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\FlashControlV71.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\ShockwaveFlashObjects.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\bin\Debug\stdole.dll
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.csproj.AssemblyReference.cache
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.csproj.SuggestedBindingRedirects.cache
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.csproj.CoreCompileInputs.cache
+F:\Main\Right C\Project\Customer\ALL\MyDataBase\obj\Debug\MyDataBase.csproj.CopyComplete
