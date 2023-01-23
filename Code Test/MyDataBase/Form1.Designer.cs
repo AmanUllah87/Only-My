@@ -294,6 +294,7 @@
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "Only for Super Soft Engineer.";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

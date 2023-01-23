@@ -24,10 +24,11 @@ namespace MyDataBase
         readonly DB_Helper.DbConnection _gt = new DB_Helper.DbConnection();
         private void SqlQuerySend_Click(object sender, EventArgs e)
         {
-
+            string aaa = DateTime.Now.ToString("DD.MM.YY");
+            
             try
             {
-                _gt.DeleteInsertLab(@"BACKUP DATABASE ["+ _gt.DatabaseName + "] TO DISK = 'E:\\B\\19.01.2022.bak' with init");
+                _gt.DeleteInsertLab(@"BACKUP DATABASE ["+ _gt.DatabaseName + "] TO DISK = 'E:\\B\\"+aaa+".bak' with init");
 
                 MessageBox.Show(@"Success");
             }
@@ -290,6 +291,11 @@ Truncate table tb_ac_SUB_DEPARTMENT
             {
                 MessageBox.Show("Please Call 01710233300");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
         }
     }  
 }
