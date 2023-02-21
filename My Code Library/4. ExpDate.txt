@@ -1,0 +1,17 @@
+//------------------------------Code-1-------------------------------------------------
+private void button4_Click(object sender, EventArgs e)
+        {
+            DateTime expirationDate = new DateTime(2023, 12, 15);
+            if (expirationDate < DateTime.Now)
+            {
+                MessageBox.Show("exp.");
+            }
+            else
+            {
+                MessageBox.Show("Not exp.");
+            }
+            label1.Text = "Expiration Date: " + expirationDate.ToString("dd/MM/yyyy");
+         }
+//----------------------------------------------------------------------------------------
+
+//-----------------------Code-2-----------------------------------------------------------       

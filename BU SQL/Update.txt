@@ -23,3 +23,7 @@ update tb_MASTER_INFO set TakeVaqPrice = 'True'
 Update tb_BILL_DETAIL SET TestId='208' WHERE TestId='9966'
 Update tb_LAB_STRICKER_INFO SET TestId='208',ReportFileName='Clinical pathology' WHERE TestId='9966'
 
+
+------------------Update Admission Name----------------------------
+update tb_in_ADMISSION set PtName = 'AAAA' where AdmNo = '23020001'
+

@@ -1,0 +1,25 @@
+private void button2_Click(object sender, EventArgs e)
+        {
+            
+                string url = "https://www.example.com"; // replace with the URL of the website you want to open
+
+                // check if internet connectivity is available
+                if (System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable())
+                {
+                    // create a new instance of the System.Diagnostics.ProcessStartInfo class
+                    ProcessStartInfo psi = new ProcessStartInfo();
+
+                    // set the FileName property to the URL
+                    psi.FileName = url;
+
+                    // set the UseShellExecute property to true
+                    psi.UseShellExecute = true;
+
+                    // start the process and open the website
+                    Process.Start(psi);
+                }
+                else
+                {
+                    MessageBox.Show("Internet connectivity is not available.");
+                }
+            }

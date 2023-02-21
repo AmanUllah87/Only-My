@@ -1,0 +1,23 @@
+private void button1_Click(object sender, EventArgs e)
+        {
+
+            string host = textBox1.Text.Trim();
+            //string host = "www.google.com"; // or use any other hostname or IP address
+            Ping ping = new Ping();
+            try
+            {
+                PingReply reply = ping.Send(host);
+                if (reply.Status == IPStatus.Success)
+                {
+                    MessageBox.Show("Ping successful. Response time: " + reply.RoundtripTime + " ms");
+                }
+                else
+                {
+                    MessageBox.Show("Ping failed. Error message: " + reply.Status);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error occurred while pinging: " + ex.Message);
+            }
+        }

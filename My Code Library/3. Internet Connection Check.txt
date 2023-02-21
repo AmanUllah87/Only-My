@@ -1,0 +1,38 @@
+//------------------------------------Method----------------------------------
+public static bool CheckInternetConnection()
+        {
+            try
+            {
+                using (var client = new Ping())
+                {
+                    // Check if google.com can be reached
+                    var result = client.Send("google.com", 1000);
+
+                    if (result?.Status == IPStatus.Success)
+                    {
+                        return true;
+                    }
+                }
+            }
+            catch
+            {
+                // Ignore any exceptions and assume there is no internet connection
+            }
+
+            return false;
+        }
+
+//------------------------------Button----------------------------------------------
+private void button3_Click(object sender, EventArgs e)
+        {
+            if (CheckInternetConnection())
+            {
+                MessageBox.Show("Internet connection is available.");
+            }
+            else
+            {
+                MessageBox.Show("Internet connection is not available.");
+            }
+        }
+
+
